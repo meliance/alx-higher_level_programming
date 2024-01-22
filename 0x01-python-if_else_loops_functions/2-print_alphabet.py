@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for i in range(65, 91):
-    print('{}'.format(chr(i).lower()), end='')
+for char in range(26):
+    print("{:s}".format(chr(char + ord("a"))), end="")
