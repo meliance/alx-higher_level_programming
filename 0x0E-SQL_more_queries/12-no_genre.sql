@@ -1,4 +1,5 @@
 -- lists all shows contained in hbtn_0d_tvshows without a genre linked
+-- uses a database to list all rows not linked to one row
 SELECT name FROM tv_genres
 WHERE name NOT IN (SELECT name FROM tv_genres
 LEFT JOIN tv_show_genres ON tv_genres.id = tv_show_genres.genre_id
